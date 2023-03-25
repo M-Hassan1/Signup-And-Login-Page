@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right, #5b7ad4, #4e9cea, #44d0ff);
+    animation: gradient 3s ease-in-out infinite;
+}
+h2{
+  text-align: center;
+  margin-top: 15px;
+
+}
+.main{
+  background-color: white;
+  width: 450px;
+  height: 82vh;
+  margin: 50px 280px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.form-page{
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-left: 100px;
+}
+input{
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  display: flex;
+}
+
+.checkbox{
+  display: inline-block;
+  padding: 50px;
+  width: 15px;
+  height: 15px;
+}
+p{
+ display: inline-block;
+ margin-left: 10px;
+}
+
+.btn {
+  position: relative;
+  background: #51ef90;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  overflow: hidden;
+  outline: none;
+  z-index: 1;
+  margin-top: 5px;
+  margin-left: 90px;
+}
+.btn:focus {
+  outline: 2px solid rgb(25, 25, 169);
+}
+.btn .submit {
+  position: absolute;
+  background: rgba(160, 160, 241, 0.601);
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 100%;
+  transform: translate(-50% , -50%);
+  transition: width 450ms ease-out, width 450ms ease-out, opacity 450ms ease-out;
+}
+footer{
+  margin-top: 20px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: darkgreen;
+}
+a:hover{
+  text-decoration: none;
+  color: darkblue;
+}
+@media screen and (max-width: 800px) {
+  body{
+    background-color: #44d0ff;
+  }
+  
+  h2{
+    text-align: center;
+    margin-top: 15px; 
+  } 
+  .main{
+    align-items: center;
+    margin: 30% auto ;
+    width: 300px;
+    height: 65vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    
+  }
+  .form-page{
+    /* position: relative; */
+    font-size: 18px;
+    margin-left: 30px;
+  }
+  input{
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px){
+  body{
+    background-color: #44d0ff;
+  }
+ 
+  h2{
+    text-align: center;
+    margin-top: 15px; 
+  } 
+
+  .main{
+    align-items: center;
+    margin: 30% auto ;
+    width: 300px;
+    height: 63vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    
+  }
+  .form-page{
+    /* position: relative; */
+    font-size: 18px;
+    margin-left: 30px;
+  }
+  input{
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+  }
+
+}
+
+
+
+
+

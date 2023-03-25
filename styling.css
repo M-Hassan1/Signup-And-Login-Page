@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: white;
+    background: linear-gradient(to right, #273970, #203f5e, #1d576b);
+  animation: gradient 20s ease-in-out infinite;
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.main2{
+    position: relative;
+    margin: 180px 400px;
+    background-color:  #44d0ff;
+    width: 350px;
+    height: 50vh;
+    border-radius: 10px;
+    border: 2px solid silver;
+    
+}
+.loginpage{
+    position: absolute;
+    margin: 40px;
+}
+input{
+    width: 90%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+}
+label{
+    font-size: 20px;
+}
+.btn {
+    position: relative;
+    background: #51ef90;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    overflow: hidden;
+    outline: none;
+    z-index: 1;
+    margin-top: 8px;
+    margin-left: 150px;
+  }
+  .btn:focus {
+    outline: 2px solid rgb(25, 25, 169);
+  }
+  .btn .submit {
+    position: absolute;
+    background: rgba(160, 160, 241, 0.601);
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 100%;
+    transform: translate(-50% , -50%);
+    transition: width 450ms ease-out, width 450ms ease-out, opacity 450ms ease-out;
+  }
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @media screen and (max-width: 1024px){
+    .main2{
+      position: relative;
+      margin: 50% auto;
+      background-color:  #44d0ff;
+      width: 350px;
+      height: 40vh;
+      border-radius: 10px;
+      border: 2px solid silver;
+      
+  } 
+
+
+
+  }
+  @media screen and (max-width: 700px){
+    .main2{
+      position: relative;
+      margin: 50% auto;
+      background-color:  #44d0ff;
+      width: 350px;
+      height: 50vh;
+      border-radius: 10px;
+      border: 2px solid silver;
+      
+  } 
+
+  }
